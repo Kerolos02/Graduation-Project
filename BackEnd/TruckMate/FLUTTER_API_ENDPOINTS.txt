@@ -1,0 +1,216 @@
+TruckMate Backend API Endpoints
+NOTE: For full request/response schemas, Flutter mapping hints, and Endpoint IDs,
+      see FLUTTER_API_REFERENCE.txt in this same folder.
+
+Base URL
+- Production: http://truckmateapi.runasp.net
+
+Authentication
+- Use JWT Bearer token in header for protected APIs:
+  Authorization: Bearer {token}
+- Logout endpoint (Driver + Trader):
+  POST /api/auth/logout   (Authorized)
+
+Health / Infra
+- GET /                      (Public)  -> API root check
+- GET /health                (Public)  -> health check
+- SignalR Hub: /hubs/driver  (JWT required, token can be sent as access_token query)
+
+Auth
+- POST /register/send-otp          (Public)
+- POST /register/verify-otp        (Public)  -> body: { email, otp } or { email, otpCode, otpToken? }; returns verificationToken
+- POST /register                   (Public)  -> accepts verificationToken OR otpToken+otpCode OR email+otp in registration body
+- POST /register/forgot-password   (Public)
+- POST /register/verify-reset-otp  (Public)
+- POST /register/reset-password    (Public)
+- POST /login                      (Public)
+
+Driver Offers (Trip Offer / Incoming Request flow)
+- GET  /api/driver/offers/current                  (Driver role)
+- POST /api/driver/offers/{offerId}/accept         (Driver role)
+- POST /api/driver/offers/{offerId}/decline        (Driver role)
+- GET  /api/driver/offers/{offerId}/status         (Driver role)
+
+Driver Home / Trips
+- GET   /api/driver/home                           (Driver role)
+- PATCH /api/driver/status                         (Driver role)
+- GET   /api/driver/incoming-trips                 (Driver role)
+- POST  /api/driver/trips/{tripId}/start           (Driver role)
+- GET   /api/driver/trips/{tripId}/execution       (Driver role, GoingToPickup/InTransit/Arrived/PickupConfirmed/Delivered UI)
+- POST  /api/driver/trips/{tripId}/arrive-pickup   (Driver role)
+- POST  /api/driver/trips/{tripId}/confirm-pickup  (Driver role)
+- POST  /api/driver/trips/{tripId}/start-delivery  (Driver role)
+- POST  /api/driver/trips/{tripId}/mark-delivered  (Driver role)
+- GET   /api/driver/trips/{tripId}/sync            (Driver role, connection retry/status)
+- GET   /api/driver/trips/{tripId}/details         (Driver role)
+- GET   /api/driver/trips/recent                   (Driver role)
+
+Driver Marketplace Trips (browse & accept open requests — separate from 45s offer flow)
+- GET  /api/driver/trips/available-requests?page=1&pageSize=20&sortBy=posted_desc|price_desc|distance_asc  (Driver role, online only; empty if driver has active trip)
+- GET  /api/driver/trips/requests/{requestId}      (Driver role, online only; detail includes trader phone + special notes)
+- POST /api/driver/trips/requests/{requestId}/accept   (Driver role; 409 if active trip / race; 410 if expired/cancelled)
+- POST /api/driver/trips/requests/{requestId}/reject   (Driver role; body JSON optional { "reason": "..." })
+- GET  /api/driver/trips/my-trips?status=all|active|completed&page=1&pageSize=10  (Driver role)
+
+Driver Wallet
+- GET   /api/driver/wallet/screen?filter=all|this_week|this_month&page=1&pageSize=10   (Driver role, UI-ready single payload)
+- GET   /api/driver/wallet/summary                 (Driver role)
+- GET   /api/driver/wallet/trips?filter=all|this_week|this_month&page=1&pageSize=10     (Driver role)
+- GET   /api/driver/wallet/trips/{tripId}          (Driver role)
+
+Driver Wallet (Flutter Example)
+- Request:
+  GET /api/driver/wallet/screen?filter=all&page=1&pageSize=10
+
+- Response:
+  {
+    "success": true,
+    "data": {
+      "title": "My Wallet",
+      "subtitle": "Track your earnings and trip income",
+      "summary": {
+        "totalEarningsEGP": 2850.00,
+        "weeklyGrowthPercent": 12,
+        "weeklyGrowthDirection": "up",
+        "thisWeekEarningsEGP": 750.00,
+        "thisMonthEarningsEGP": 2100.00,
+        "totalTripsCompleted": 18
+      },
+      "activeFilter": "all",
+      "filters": ["all", "this_week", "this_month"],
+      "recentTripsLabel": "Recent Trips",
+      "recentTrips": {
+        "filter": "all",
+        "totalCount": 6,
+        "page": 1,
+        "pageSize": 10,
+        "totalPages": 1,
+        "trips": [
+          {
+            "tripId": "guid",
+            "shipmentNumber": "TRIP-4522",
+            "route": "Cairo \u2192 Alexandria",
+            "pickupLocation": "Cairo",
+            "dropoffLocation": "Alexandria",
+            "earnedAt": "2026-04-25T14:30:00Z",
+            "earnedAtFormatted": "2026-04-25 14:30",
+            "amountEGP": 240.00,
+            "amountFormatted": "+240 EGP",
+            "status": "Completed"
+          }
+        ]
+      }
+    },
+    "message": null,
+    "errors": null
+  }
+
+Driver Settings
+- GET    /api/driver/settings/profile                   (Driver role)
+- PATCH  /api/driver/settings/change-password           (Driver role)
+- PATCH  /api/driver/settings/update-contact            (Driver role)
+- GET    /api/driver/settings/notifications             (Driver role)
+- PATCH  /api/driver/settings/notifications             (Driver role)
+- GET    /api/driver/settings/privacy                   (Driver role)
+- PATCH  /api/driver/settings/privacy                   (Driver role)
+- DELETE /api/driver/settings/account                   (Driver role)
+- POST   /api/driver/settings/account/cancel-deletion   (Driver role)
+
+Trader Home
+- GET /api/trader/home                    (Trader/Admin authorized)
+- GET /api/trader/shipments               (Trader/Admin authorized)
+- PUT /api/trader/offers/{offerId}/accept (Trader/Admin authorized)
+- PUT /api/trader/offers/{offerId}/reject (Trader/Admin authorized)
+
+Trader Mobile (new screens)
+- GET  /api/trader/mobile/home-current-shipment           (Trader role)
+- GET  /api/trader/mobile/shipments/{shipmentId}/details  (Trader role)
+- GET  /api/trader/mobile/shipments/{shipmentId}/offers?tab=pending|accepted|rejected&page=1&pageSize=10 (Trader role)
+- POST /api/trader/mobile/offers/{offerId}/accept         (Trader role)
+- POST /api/trader/mobile/offers/{offerId}/reject         (Trader role)
+
+Trader Mobile (previously added)
+- GET  /api/trader/shipments/{shipmentId}/suggested-drivers
+- GET  /api/trader/drivers/{driverId}/details
+- POST /api/trader/shipments/{shipmentId}/select-driver
+- GET  /api/trader/shipments/{shipmentId}/tracking
+- POST /api/trader/shipments/{shipmentId}/mark-delivered
+- POST /api/trader/shipments/{shipmentId}/cancel
+- GET  /api/trader/shipments/{shipmentId}/delivery-summary
+- POST /api/trader/shipments/{shipmentId}/rate-driver
+- GET  /api/trader/invoices/{invoiceId}
+- POST /api/trader/invoices/{invoiceId}/pay
+- GET  /api/trader/invoices/{invoiceId}/pdf
+- POST /api/trader/invoices/{invoiceId}/share
+- GET  /api/trader/wallet
+- POST /api/trader/wallet/cards
+- DELETE /api/trader/wallet/cards/{cardId}
+- PATCH /api/trader/wallet/cards/{cardId}/set-default
+
+Trader Settings
+- GET    /api/trader/settings/profile                   (Trader role)
+- PATCH  /api/trader/settings/change-password           (Trader role)
+- PATCH  /api/trader/settings/update-contact            (Trader role)
+- GET    /api/trader/settings/notifications             (Trader role)
+- PATCH  /api/trader/settings/notifications             (Trader role)
+- GET    /api/trader/settings/privacy                   (Trader role)
+- PATCH  /api/trader/settings/privacy                   (Trader role)
+- POST   /api/trader/settings/privacy/data-export-request (Trader role)
+- DELETE /api/trader/settings/account                   (Trader role)
+- POST   /api/trader/settings/account/cancel-deletion   (Trader role)
+
+Profile
+- GET /api/profile                 (Authorized)
+- PUT /api/profile                 (Authorized)
+- PUT /api/profile/change-password (Authorized)
+
+Shipment
+- POST /api/shipment/estimate    (Authorized)
+- PUT  /api/shipment/{id}/confirm (Authorized)
+- GET  /api/shipment/dashboard    (Authorized)
+- GET  /api/shipment/{id}         (Authorized)
+
+Reviews
+- PUT    /api/review/{id}           (Authorized)
+- DELETE /api/review/{id}           (Authorized)
+- GET    /api/review/driver/{driverId} (Public/depends on policy)
+
+Payment
+- POST /api/payment/create         (Authorized or service token based on config)
+
+Legal
+- GET /api/legal/documents/{type}  (Public)
+
+Debug / Sample
+- GET /WeatherForecast             (Public, sample endpoint)
+
+SignalR Server -> Client events (DriverHub)
+- NewTripOffer
+- TripOfferExpired
+- TripAccepted
+- TripOfferCancelled
+- StatusAcknowledged
+- TripAssigned
+- DriverAvailabilityChanged
+- CourierTripStarted
+- DriverAcceptedTrip
+- DriverDeclinedTrip
+- DriverAssigned
+- NoDriversAvailable
+- NewRequestAvailable          (marketplace: new open TripRequest in driver zone)
+- RequestTaken                 (marketplace: { requestId, requestNumber } — remove card for other drivers)
+- RequestCancelled             (marketplace: { requestId, reason })
+- RequestExpired               (marketplace: { requestId } — all drivers in marketplace-all-drivers group)
+- DriverAccepted               (trader group: { driverName, acceptedAt } — same hub, trader clients)
+- RequestAccepted              (dispatcher group: { requestId, driverId })
+- RequestExpiredNoDriver       (dispatcher group: { requestId })
+- DriverRejectedRequest        (dispatcher group: { requestId, driverId })
+
+SignalR Client -> Server methods (DriverHub)
+- DriverOnline
+- DriverOffline
+- UpdateStatus
+- JoinOperationalZone
+- JoinDispatcherFeed
+- JoinAvailableRequestsRoom(zone)   (marketplace Trips tab — subscribe to zone + global expiry fan-out)
+- LeaveAvailableRequestsRoom(zone)

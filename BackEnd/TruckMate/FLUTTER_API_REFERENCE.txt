@@ -1,0 +1,802 @@
+================================================================================
+TRUCKMATE BACKEND — FLUTTER API REFERENCE
+================================================================================
+Purpose : Give this file to the Flutter/Cursor agent when wiring screens to the API.
+Backend : ASP.NET Core 8 (TruckMate)
+Updated : 2026-06-12
+
+HOW FLUTTER AGENT SHOULD USE THIS FILE
+--------------------------------------
+1. Put a copy in the Flutter repo (e.g. docs/TRUCKMATE_API_REFERENCE.txt).
+2. Map each "Endpoint ID" to:
+   - lib/core/constants/api_endpoints.dart  → path constant
+   - lib/data/models/...                    → JSON model (match Response JSON keys)
+   - lib/data/services/... or repositories → HTTP call
+3. Most mobile endpoints wrap payloads in ApiResponse<T> (see below).
+4. Auth endpoints (login/register) return plain JSON (no ApiResponse wrapper).
+5. All JSON property names are camelCase in HTTP responses.
+
+================================================================================
+GLOBAL CONFIG
+================================================================================
+
+Base URLs
+  Production : http://truckmateapi.runasp.net
+  Local dev  : https://localhost:{port}   (check launchSettings.json)
+
+Headers (protected routes)
+  Authorization: Bearer {jwtToken}
+  Content-Type: application/json
+
+JWT lifetime : 24 hours after login
+
+Roles (UserRole enum — login response field "role")
+  1 = Admin
+  2 = Driver
+  3 = Trader
+
+Driver availability (PATCH /api/driver/status, SignalR UpdateStatus)
+  "Online"  |  "Offline"
+
+================================================================================
+STANDARD RESPONSE WRAPPERS
+================================================================================
+
+--- ApiResponse<T> (Driver + Trader mobile APIs) ---
+{
+  "success": true,
+  "data": { ... },
+  "message": "optional string",
+  "errors": null
+}
+
+Error example:
+{
+  "success": false,
+  "data": null,
+  "message": "Human-readable error",
+  "errors": null
+}
+
+HTTP codes commonly used:
+  200 OK | 400 Bad Request | 401 Unauthorized | 404 Not Found
+  409 Conflict (e.g. driver already has active trip) | 410 Gone (expired request)
+
+--- Plain auth responses (login / register) ---
+{ "success": true/false, "message": "..." , ...extra fields }
+
+================================================================================
+SIGNALR
+================================================================================
+
+Driver hub
+  URL    : {baseUrl}/hubs/driver
+  Auth   : JWT — pass as query ?access_token={token} OR Authorization header
+  Role   : Driver (most methods), Admin (JoinDispatcherFeed)
+
+Client → Server (invoke)
+  DriverOnline()                          → same as UpdateStatus("Online")
+  DriverOffline()                         → same as UpdateStatus("Offline")
+  UpdateStatus(status)                    → "Online" | "Offline"
+  JoinOperationalZone(zone)               → zone-matched offer fan-out
+  JoinDispatcherFeed()                    → Admin only
+  JoinAvailableRequestsRoom(zone)         → marketplace tab
+  LeaveAvailableRequestsRoom(zone)
+
+Server → Client (listen)
+  NewTripOffer, TripOfferExpired, TripAccepted, TripOfferCancelled
+  StatusAcknowledged                      → { success, status?, message }
+  TripAssigned, DriverAvailabilityChanged, CourierTripStarted
+  DriverAcceptedTrip, DriverDeclinedTrip, DriverAssigned, NoDriversAvailable
+  NewRequestAvailable                     → marketplace new open request
+  RequestTaken                            → { requestId, requestNumber }
+  RequestCancelled                        → { requestId, reason }
+  RequestExpired                          → { requestId }
+  DriverAccepted                          → trader group { driverName, acceptedAt }
+  RequestAccepted                         → dispatcher { requestId, driverId }
+  RequestExpiredNoDriver                  → dispatcher { requestId }
+  DriverRejectedRequest                   → dispatcher { requestId, driverId }
+
+Trader hub
+  URL    : {baseUrl}/hubs/trader
+  Auth   : JWT (Trader role)
+  Client → Server: JoinTraderFeed(traderPublicId)   // Guid from JWT claim trader_public_id
+
+================================================================================
+ENDPOINT INDEX (quick lookup)
+================================================================================
+  AUTH-01  POST /login
+  AUTH-02  POST /register/send-otp
+  AUTH-03  POST /register/verify-otp
+  AUTH-04  POST /register
+  AUTH-05  POST /register/forgot-password
+  AUTH-06  POST /register/verify-reset-otp
+  AUTH-07  POST /register/reset-password
+  AUTH-08  POST /api/auth/logout
+  DRV-01   GET  /api/driver/home
+  DRV-02   PATCH /api/driver/status
+  DRV-03   GET  /api/driver/incoming-trips
+  DRV-04   POST /api/driver/trips/{tripId}/start
+  DRV-05   GET  /api/driver/trips/{tripId}/execution
+  DRV-06   POST /api/driver/trips/{tripId}/arrive-pickup
+  DRV-07   POST /api/driver/trips/{tripId}/confirm-pickup
+  DRV-08   POST /api/driver/trips/{tripId}/start-delivery
+  DRV-09   POST /api/driver/trips/{tripId}/mark-delivered
+  DRV-10   POST /api/driver/trips/{tripId}/complete
+  DRV-11   GET  /api/driver/trips/{tripId}/sync
+  DRV-12   GET  /api/driver/trips/{tripId}/details
+  DRV-13   GET  /api/driver/trips/recent
+  OFF-01   GET  /api/driver/offers/current
+  OFF-02   POST /api/driver/offers/{offerId}/accept
+  OFF-03   POST /api/driver/offers/{offerId}/decline
+  OFF-04   GET  /api/driver/offers/{offerId}/status
+  MKT-01   GET  /api/driver/trips/available-requests
+  MKT-02   GET  /api/driver/trips/requests/{requestId}
+  MKT-03   POST /api/driver/trips/requests/{requestId}/accept
+  MKT-04   POST /api/driver/trips/requests/{requestId}/reject
+  MKT-05   GET  /api/driver/trips/my-trips
+  WAL-01   GET  /api/driver/wallet/screen
+  WAL-02   GET  /api/driver/wallet/summary
+  WAL-03   GET  /api/driver/wallet/trips
+  WAL-04   GET  /api/driver/wallet/trips/{tripId}
+  DSET-01  GET    /api/driver/settings/profile
+  DSET-02  PATCH  /api/driver/settings/change-password
+  DSET-03  PATCH  /api/driver/settings/update-contact
+  DSET-04  GET    /api/driver/settings/notifications
+  DSET-05  PATCH  /api/driver/settings/notifications
+  DSET-06  GET    /api/driver/settings/privacy
+  DSET-07  PATCH  /api/driver/settings/privacy
+  DSET-08  DELETE /api/driver/settings/account
+  DSET-09  POST   /api/driver/settings/account/cancel-deletion
+  TRD-01   GET  /api/trader/home
+  TRD-02   GET  /api/trader/shipments
+  TRD-03   PUT  /api/trader/offers/{offerId}/accept
+  TRD-04   PUT  /api/trader/offers/{offerId}/reject
+  TMO-01   GET  /api/trader/mobile/home-current-shipment
+  TMO-02   GET  /api/trader/mobile/shipments/{shipmentId}/details
+  TMO-03   GET  /api/trader/mobile/shipments/{shipmentId}/offers
+  TMO-04   POST /api/trader/mobile/offers/{offerId}/accept
+  TMO-05   POST /api/trader/mobile/offers/{offerId}/reject
+  TMO-06   GET  /api/trader/shipments/{shipmentId}/suggested-drivers
+  TMO-07   GET  /api/trader/drivers/{driverId}/details
+  TMO-08   POST /api/trader/shipments/{shipmentId}/select-driver
+  TMO-09   GET  /api/trader/shipments/{shipmentId}/tracking
+  TMO-10   POST /api/trader/shipments/{shipmentId}/mark-delivered
+  TMO-11   POST /api/trader/shipments/{shipmentId}/cancel
+  TMO-12   GET  /api/trader/shipments/{shipmentId}/delivery-summary
+  TMO-13   POST /api/trader/shipments/{shipmentId}/rate-driver
+  TMO-14   GET  /api/trader/invoices/{invoiceId}
+  TMO-15   POST /api/trader/invoices/{invoiceId}/pay
+  TMO-16   GET  /api/trader/invoices/{invoiceId}/pdf
+  TMO-17   POST /api/trader/invoices/{invoiceId}/share
+  TMO-18   GET  /api/trader/wallet
+  TMO-19   POST /api/trader/wallet/cards
+  TMO-20   DELETE /api/trader/wallet/cards/{cardId}
+  TMO-21   PATCH /api/trader/wallet/cards/{cardId}/set-default
+  TSET-01  GET    /api/trader/settings/profile
+  TSET-02  PATCH  /api/trader/settings/change-password
+  TSET-03  PATCH  /api/trader/settings/update-contact
+  TSET-04  GET    /api/trader/settings/notifications
+  TSET-05  PATCH  /api/trader/settings/notifications
+  TSET-06  GET    /api/trader/settings/privacy
+  TSET-07  PATCH  /api/trader/settings/privacy
+  TSET-08  POST   /api/trader/settings/privacy/data-export-request
+  TSET-09  DELETE /api/trader/settings/account
+  TSET-10  POST   /api/trader/settings/account/cancel-deletion
+  SHP-01   POST /api/shipment/estimate
+  SHP-02   POST /api/shipment
+  SHP-03   PUT  /api/shipment/{id}/confirm
+  SHP-04   GET  /api/shipment/dashboard
+  SHP-05   GET  /api/shipment/{id}
+  SHP-06   GET  /api/shipment
+  PRF-01   GET  /api/profile
+  PRF-02   PUT  /api/profile
+  PRF-03   PUT  /api/profile/change-password
+  REV-01   POST   /api/review
+  REV-02   PUT    /api/review/{id}
+  REV-03   DELETE /api/review/{id}
+  REV-04   GET    /api/review/driver/{driverId}
+  PAY-01   POST /api/payment/create
+  LEG-01   GET  /api/legal/documents/{type}
+  INF-01   GET  /
+  INF-02   GET  /health
+
+================================================================================
+AUTH & REGISTRATION
+================================================================================
+
+[AUTH-01] POST /login
+  Auth   : Public
+  Body   :
+  {
+    "email": "user@example.com",
+    "password": "Password1"
+  }
+  Response 200 :
+  {
+    "token": "jwt...",
+    "userId": 1,
+    "fullName": "John Doe",
+    "email": "user@example.com",
+    "role": 2
+  }
+  Errors: 400 missing fields | 401 invalid credentials | 401 email not verified
+  Flutter: LoginRequest, LoginResponse, AuthRepository.login()
+
+---
+
+[AUTH-02] POST /register/send-otp
+  Auth   : Public
+  Body   : { "email": "new@example.com" }
+  Response 200 :
+  {
+    "success": true,
+    "message": "OTP sent to your email.",
+    "otpToken": "jwt-with-embedded-otp"
+  }
+  Errors: 400 email already registered
+  Flutter: RegisterStep1 — store otpToken for verify/register
+
+---
+
+[AUTH-03] POST /register/verify-otp
+  Auth   : Public
+  Body   (either style works):
+  { "email": "new@example.com", "otp": "123456" }
+  { "email": "new@example.com", "otpCode": "123456", "otpToken": "..." }
+  Response 200 :
+  {
+    "success": true,
+    "message": "OTP verified successfully.",
+    "verificationToken": "jwt..."
+  }
+  Flutter: OTP screen → store verificationToken
+
+---
+
+[AUTH-04] POST /register
+  Auth   : Public
+  Body   : RegisterRequest — use ONE verification path:
+    A) verificationToken from AUTH-03
+    B) otpToken + otpCode from AUTH-02
+    C) email + otp in nested DTO
+  {
+    "role": 2,
+    "verificationToken": "...",
+    "driver": {
+      "fullName": "...",
+      "phone": "+2010...",
+      "email": "driver@example.com",
+      "nationalId": "14digits",
+      "licenseNumber": "...",
+      "licenseType": "...",
+      "licenseImageBase64": "...",
+      "plateNumber": "...",
+      "truckType": "...",
+      "capacity": 5000,
+      "password": "Password1",
+      "confirmPassword": "Password1",
+      "otpVerificationCode": "123456"
+    }
+  }
+  For Trader role=3, send "trader" object instead of "driver":
+  {
+    "role": 3,
+    "verificationToken": "...",
+    "trader": {
+      "fullName": "...",
+      "phone": "...",
+      "email": "...",
+      "nationalId": "...",
+      "businessName": "...",
+      "address": "...",
+      "password": "Password1",
+      "confirmPassword": "Password1",
+      "otpVerificationCode": "123456"
+    }
+  }
+  Response 200: { "success": true, "message": "...", "userId": N }
+  Flutter: separate DriverSignUpDto / TraderSignUpDto models
+
+---
+
+[AUTH-05] POST /register/forgot-password
+  Body   : { "email": "user@example.com" }
+  Response : { "success": true, "message": "If this email exists, an OTP has been sent." }
+
+[AUTH-06] POST /register/verify-reset-otp
+  Body   : { "email": "...", "otp": "123456" }
+  Response : { "success": true, "message": "...", "resetToken": "jwt..." }
+
+[AUTH-07] POST /register/reset-password
+  Body   : { "resetToken": "...", "newPassword": "NewPass1!" }
+  Response : { "success": true, "message": "Password reset successfully." }
+
+[AUTH-08] POST /api/auth/logout
+  Auth   : Bearer (Driver or Trader)
+  Body   : none
+  Response : { "success": true, "message": "Logged out." }
+  Note   : increments token version server-side — discard local JWT
+
+================================================================================
+DRIVER — HOME & TRIP EXECUTION
+================================================================================
+
+[DRV-01] GET /api/driver/home
+  Auth   : Driver
+  Response data (DriverHomeResponseDto):
+  {
+    "driverName": "string",
+    "rating": 4.8,
+    "status": "Online",
+    "currentZone": "Cairo",
+    "activeTrip": {
+      "tripId": "guid",
+      "shipmentNumber": "TRIP-001",
+      "status": "InProgress",
+      "scheduleStatus": "OnTime",
+      "pickupLocation": "Cairo",
+      "dropoffLocation": "Alex",
+      "shipment": {
+        "clientName": "...",
+        "cargoType": "...",
+        "weightLbs": 1200,
+        "isFragile": false
+      }
+    },
+    "todaySummary": {
+      "tripsCompleted": 3,
+      "earningsEGP": 750.00,
+      "onlineTimeFormatted": "4h 20m"
+    },
+    "recentTrips": [
+      {
+        "shipmentNumber": "TRIP-001",
+        "route": "Cairo → Alex",
+        "status": "Completed",
+        "date": "2026-06-12",
+        "time": "14:30"
+      }
+    ]
+  }
+  Flutter: DriverHomeScreen, DriverHomeModel
+
+---
+
+[DRV-02] PATCH /api/driver/status
+  Body   : { "status": "Online" }  // or "Offline"
+  Response data:
+  { "status": "Online", "message": "You are now online." }
+
+---
+
+[DRV-03] GET /api/driver/incoming-trips
+  Response data:
+  {
+    "trips": [
+      {
+        "tripId": "guid",
+        "shipmentNumber": "...",
+        "pickupLocation": "...",
+        "dropoffLocation": "...",
+        "cargoType": "...",
+        "weightLbs": 500,
+        "isFragile": false,
+        "offeredAt": "2026-06-12T10:00:00Z"
+      }
+    ]
+  }
+
+---
+
+[DRV-04] POST /api/driver/trips/{tripId}/start
+  Response data (StartTripResponseDto):
+  { "tripId": "guid", "status": "InProgress", "shipmentNumber": "..." }
+  Errors: 409 if trip cannot start
+
+---
+
+[DRV-05] GET /api/driver/trips/{tripId}/execution
+  UI states via data.screenState:
+    GoingToPickup | InTransit | Arrived | PickupConfirmed | Delivered
+  Response data (DriverTripExecutionScreenDto):
+  {
+    "tripId": "guid",
+    "shipmentNumber": "...",
+    "screenState": "GoingToPickup",
+    "title": "...",
+    "subtitle": "...",
+    "pickupLocation": "...",
+    "dropoffLocation": "...",
+    "distanceKm": 220.5,
+    "etaMinutes": 45,
+    "etaFormatted": "45 min",
+    "driver": { "name": "...", "phone": "+20..." },
+    "shipment": { "cargoType": "...", "weightLbs": 500, "packagesCount": 2 },
+    "actions": {
+      "canMarkArrived": true,
+      "canConfirmPickup": false,
+      "canStartDelivery": false,
+      "canMarkDelivered": false,
+      "canCompleteTrip": false
+    }
+  }
+
+[DRV-06] POST .../arrive-pickup     → advances to Arrived
+[DRV-07] POST .../confirm-pickup    → PickupConfirmed
+[DRV-08] POST .../start-delivery    → InTransit (to dropoff)
+[DRV-09] POST .../mark-delivered    → Delivered
+[DRV-10] POST .../complete          → trip completed / earnings recorded
+  All POST trip actions: empty body, ApiResponse with success message
+
+[DRV-11] GET .../sync
+  Use when reconnecting — returns current trip state snapshot
+
+[DRV-12] GET .../details
+  Response: TripDetailsResponseDto (tripId, shipmentNumber, locations, scheduleStatus, shipment, status)
+
+[DRV-13] GET /api/driver/trips/recent
+  Paginated recent completed trips for driver home/history
+
+================================================================================
+DRIVER — 45-SECOND OFFER FLOW (SignalR + REST)
+================================================================================
+
+[OFF-01] GET /api/driver/offers/current
+  Response data:
+  {
+    "hasOffer": true,
+    "offer": {
+      "offerId": "guid",
+      "tripId": "guid",
+      "shipmentNumber": "...",
+      "badge": "NEW SHIPMENT REQUEST",
+      "pickupLocation": "...",
+      "dropoffLocation": "...",
+      "distanceKm": 50,
+      "estimatedDurationMinutes": 60,
+      "estimatedDurationFormatted": "1h",
+      "paymentAmountEGP": 240,
+      "shipment": { "cargoType": "...", "weightLbs": 500, "isFragile": false },
+      "trader": { "businessName": "..." },
+      "expiresAt": "2026-06-12T12:00:45Z",
+      "secondsRemaining": 32
+    },
+    "driverStatus": {
+      "isOnline": true,
+      "currentZone": "Cairo",
+      "message": "Waiting for requests"
+    }
+  }
+
+[OFF-02] POST /api/driver/offers/{offerId}/accept
+  Response data (AcceptOfferResponseDto):
+  {
+    "tripId": "guid",
+    "shipmentNumber": "...",
+    "status": "Accepted",
+    "pickupLocation": "...",
+    "dropoffLocation": "...",
+    "paymentAmountEGP": 240,
+    "shipment": { "cargoType": "...", "weightLbs": 500, "isFragile": false }
+  }
+
+[OFF-03] POST /api/driver/offers/{offerId}/decline
+  Body optional: { "reason": "Too far" }
+
+[OFF-04] GET /api/driver/offers/{offerId}/status
+  Response: { "offerId", "status", "secondsRemaining", "expiredReason" }
+  status enum TripOfferStatus: Pending, Accepted, Declined, Expired, Cancelled
+
+================================================================================
+DRIVER — MARKETPLACE TRIPS (browse open requests)
+================================================================================
+
+[MKT-01] GET /api/driver/trips/available-requests
+  Query  : page=1&pageSize=20&sortBy=posted_desc|price_desc|distance_asc
+  Auth   : Driver, must be Online, no active trip
+  Response data:
+  {
+    "totalCount": 12,
+    "page": 1,
+    "pageSize": 20,
+    "requests": [
+      {
+        "requestId": "guid",
+        "requestNumber": "REQ-1001",
+        "offeredPaymentEGP": 300,
+        "offeredPaymentFormatted": "300 EGP",
+        "pickupLocation": "Cairo",
+        "dropoffLocation": "Giza",
+        "distanceKm": 25,
+        "distanceFormatted": "25 km",
+        "estimatedDurationMinutes": 40,
+        "estimatedDurationFormatted": "40 min",
+        "weightLbs": 800,
+        "weightFormatted": "800 lbs",
+        "cargoType": "General",
+        "postedAt": "2026-06-12T09:00:00Z",
+        "postedAgoFormatted": "5 min ago"
+      }
+    ]
+  }
+
+[MKT-02] GET /api/driver/trips/requests/{requestId}
+  Response includes trader phone + specialNotes for call/navigation UI
+
+[MKT-03] POST /api/driver/trips/requests/{requestId}/accept
+  Response data:
+  {
+    "acceptance": {
+      "requestId": "guid",
+      "requestNumber": "REQ-1001",
+      "tripId": "guid",
+      "route": { "pickupLocation": "...", "dropoffLocation": "..." },
+      "youllEarnEGP": 300,
+      "youllEarnFormatted": "300 EGP",
+      "nextStep": "Navigate to pickup",
+      "pickupNavigationUrl": "https://maps..."
+    }
+  }
+  Errors: 409 active trip or race lost | 410 expired/cancelled
+
+[MKT-04] POST /api/driver/trips/requests/{requestId}/reject
+  Body optional: { "reason": "..." }
+  Response: { "requestId": "guid" }
+
+[MKT-05] GET /api/driver/trips/my-trips
+  Query  : status=all|active|completed&page=1&pageSize=10
+  Response: paginated MyMarketplaceTripItemDto list
+
+================================================================================
+DRIVER — WALLET
+================================================================================
+
+[WAL-01] GET /api/driver/wallet/screen
+  Query  : filter=all|this_week|this_month&page=1&pageSize=10
+  Response data (single UI payload):
+  {
+    "title": "My Wallet",
+    "subtitle": "Track your earnings and trip income",
+    "summary": {
+      "totalEarningsEGP": 2850.00,
+      "weeklyGrowthPercent": 12,
+      "weeklyGrowthDirection": "up",
+      "thisWeekEarningsEGP": 750.00,
+      "thisMonthEarningsEGP": 2100.00,
+      "totalTripsCompleted": 18
+    },
+    "activeFilter": "all",
+    "filters": ["all", "this_week", "this_month"],
+    "recentTripsLabel": "Recent Trips",
+    "recentTrips": {
+      "filter": "all",
+      "totalCount": 6,
+      "page": 1,
+      "pageSize": 10,
+      "totalPages": 1,
+      "trips": [
+        {
+          "tripId": "guid",
+          "shipmentNumber": "TRIP-4522",
+          "route": "Cairo → Alexandria",
+          "pickupLocation": "Cairo",
+          "dropoffLocation": "Alexandria",
+          "earnedAt": "2026-04-25T14:30:00Z",
+          "earnedAtFormatted": "2026-04-25 14:30",
+          "amountEGP": 240.00,
+          "amountFormatted": "+240 EGP",
+          "status": "Completed"
+        }
+      ]
+    }
+  }
+  Flutter: DriverWalletScreen — one API call renders full screen
+
+[WAL-02] GET /api/driver/wallet/summary          → summary block only
+[WAL-03] GET /api/driver/wallet/trips            → paginated trip earnings list
+[WAL-04] GET /api/driver/wallet/trips/{tripId}   → single trip earning detail
+
+================================================================================
+DRIVER — SETTINGS
+================================================================================
+
+[DSET-01] GET /api/driver/settings/profile
+  Response: { "fullName", "initials", "role" }
+
+[DSET-02] PATCH /api/driver/settings/change-password
+  Body: { "currentPassword", "newPassword", "confirmNewPassword" }
+
+[DSET-03] PATCH /api/driver/settings/update-contact
+  Body: { "phone", "email" }
+
+[DSET-04/05] GET/PATCH /api/driver/settings/notifications
+  Patch body example:
+  { "pushEnabled": true, "emailEnabled": false, "smsEnabled": false,
+    "tripUpdates": true, "promotions": false }
+
+[DSET-06/07] GET/PATCH /api/driver/settings/privacy
+  Patch: visibility / data sharing toggles
+
+[DSET-08] DELETE /api/driver/settings/account
+  Body: { "password", "reason" }  → schedules deletion
+
+[DSET-09] POST /api/driver/settings/account/cancel-deletion
+  Body: none
+
+================================================================================
+TRADER — HOME (legacy web-style)
+================================================================================
+
+[TRD-01] GET /api/trader/home           Auth: Trader|Admin
+[TRD-02] GET /api/trader/shipments
+[TRD-03] PUT /api/trader/offers/{offerId}/accept
+[TRD-04] PUT /api/trader/offers/{offerId}/reject
+
+================================================================================
+TRADER — MOBILE SCREENS
+================================================================================
+
+[TMO-01] GET /api/trader/mobile/home-current-shipment
+  Response data:
+  {
+    "traderName": "...",
+    "currentShipment": {
+      "shipmentId": "guid",
+      "shipmentNumber": "SHP-001",
+      "status": "InTransit",
+      "routeFrom": "Cairo",
+      "routeTo": "Alex",
+      "driverName": "...",
+      "totalCostEGP": 500
+    },
+    "quickInsights": { "avgTimeHours": 4.2, "avgCostEGP": 450, "completedShipments": 12 },
+    "recentActivity": [ { "shipmentId", "route", "dateLabel", "status" } ]
+  }
+
+[TMO-02] GET /api/trader/mobile/shipments/{shipmentId}/details
+  Full shipment detail + timeline + driver vehicle info
+
+[TMO-03] GET /api/trader/mobile/shipments/{shipmentId}/offers
+  Query: tab=pending|accepted|rejected&page=1&pageSize=10
+  Response: { shipmentId, tab, totalCount, offers[] }
+  Each offer: offerId, driverId, driverName, initials, rating, reviewCount,
+              vehicleTypeLabel, offerPriceEGP, etaMinutes, status
+
+[TMO-04] POST /api/trader/mobile/offers/{offerId}/accept
+[TMO-05] POST /api/trader/mobile/offers/{offerId}/reject
+
+[TMO-06] GET /api/trader/shipments/{shipmentId}/suggested-drivers
+  Response: { shipmentId, availableCount, drivers[] }
+  Driver card: driverId, fullName, initials, avatarColor, isBestMatch, rating,
+               reviewCount, distanceKm, vehicleType, vehicleTypeLabel,
+               totalCostEGP, isVerified
+
+[TMO-07] GET /api/trader/drivers/{driverId}/details
+  Full profile + vehicle + recentReviews[]
+
+[TMO-08] POST /api/trader/shipments/{shipmentId}/select-driver
+  Body: { "driverId": "guid" }
+  Response: { shipmentId, driverId, driverName, estimatedPickupAt, invoiceId }
+
+[TMO-09] GET /api/trader/shipments/{shipmentId}/tracking
+  Live map UI: driverLocation { lat, lng }, route coords, timeline[], actions
+
+[TMO-10] POST /api/trader/shipments/{shipmentId}/mark-delivered
+[TMO-11] POST /api/trader/shipments/{shipmentId}/cancel
+  Body optional: { "reason": "..." }
+
+[TMO-12] GET /api/trader/shipments/{shipmentId}/delivery-summary
+  Post-delivery screen + invoiceId + canRate flag
+
+[TMO-13] POST /api/trader/shipments/{shipmentId}/rate-driver
+  Body: { "rating": 5, "comment": "Great service" }
+
+[TMO-14] GET /api/trader/invoices/{invoiceId}
+  Full invoice breakdown (route, shipmentDetails, driver, pricing, status flags)
+
+[TMO-15] POST /api/trader/invoices/{invoiceId}/pay
+  Body: { "paymentCardId": "guid" }
+
+[TMO-16] GET /api/trader/invoices/{invoiceId}/pdf
+  Returns PDF file stream
+
+[TMO-17] POST /api/trader/invoices/{invoiceId}/share
+  Body: { "method": "email" }
+
+[TMO-18] GET /api/trader/wallet
+  Response: { balanceEGP, totalSpentEGP, savedCards[] }
+
+[TMO-19] POST /api/trader/wallet/cards
+  Body: { cardHolderName, cardNumber, expiryMonth, expiryYear, cvv }
+
+[TMO-20] DELETE /api/trader/wallet/cards/{cardId}
+[TMO-21] PATCH /api/trader/wallet/cards/{cardId}/set-default
+
+================================================================================
+TRADER — SETTINGS
+================================================================================
+
+Same pattern as driver settings (TSET-01 … TSET-10).
+Extra trader-only:
+[TSET-08] POST /api/trader/settings/privacy/data-export-request
+  Body: none → queues GDPR-style export
+
+================================================================================
+SHIPMENT (trader web / shared)
+================================================================================
+
+[SHP-01] POST /api/shipment/estimate
+  Body (CreateShipmentRequestDto):
+  {
+    "pickupLocation": "...",
+    "dropOffLocation": "...",
+    "scheduledDate": "2026-06-15T00:00:00",
+    "scheduledTime": "14:30:00",
+    "packageCount": 2,
+    "weight": 500,
+    "isFragile": false,
+    "isRefrigerated": false,
+    "minTemperature": null,
+    "maxTemperature": null
+  }
+  Response: CostTimeEstimateDto (estimated cost + duration)
+
+[SHP-02] POST /api/shipment              → creates pending shipment (Trader)
+[SHP-03] PUT  /api/shipment/{id}/confirm
+  Body: { "driverId": 1, "vehicleType": "...", "finalCost": 500 }
+[SHP-04] GET  /api/shipment/dashboard
+[SHP-05] GET  /api/shipment/{id}
+[SHP-06] GET  /api/shipment              → list all trader shipments
+
+================================================================================
+PROFILE / REVIEWS / PAYMENT / LEGAL
+================================================================================
+
+[PRF-01] GET  /api/profile               → current user profile
+[PRF-02] PUT  /api/profile               → update profile fields
+[PRF-03] PUT  /api/profile/change-password
+
+[REV-01] POST   /api/review              → create review (Authorized)
+[REV-02] PUT    /api/review/{id}
+[REV-03] DELETE /api/review/{id}
+[REV-04] GET    /api/review/driver/{driverId}  → public driver reviews list
+
+[PAY-01] POST /api/payment/create        → payment session (config-dependent)
+
+[LEG-01] GET /api/legal/documents/{type}
+  type values (LegalDocumentType): terms, privacy, cookies, etc.
+
+[INF-01] GET /        → API root
+[INF-02] GET /health  → health check
+
+================================================================================
+FLUTTER PROJECT STRUCTURE (recommended mapping)
+================================================================================
+
+lib/core/constants/api_endpoints.dart
+  static const baseUrl = 'http://truckmateapi.runasp.net';
+  static const login = '/login';
+  static const driverHome = '/api/driver/home';
+  // ... map every Endpoint ID path
+
+lib/core/network/api_response.dart
+  class ApiResponse<T> { bool success; T? data; String? message; }
+
+lib/data/models/
+  Mirror DTO names: driver_home_response.dart, trip_execution_screen.dart, etc.
+  Use @JsonSerializable(fieldRename: FieldRename.none) — API already camelCase
+
+lib/data/services/
+  auth_service.dart      → AUTH-*
+  driver_service.dart    → DRV-*, OFF-*, MKT-*
+  driver_wallet_service.dart → WAL-*
+  trader_service.dart    → TMO-*, TRD-*
+  signalr_service.dart   → hubs
+
+lib/core/network/auth_interceptor.dart
+  Attach Bearer token from secure storage on every request except Public routes
+
+================================================================================
+END OF REFERENCE
+================================================================================

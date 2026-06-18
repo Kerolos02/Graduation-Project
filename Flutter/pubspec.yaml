@@ -1,0 +1,52 @@
+name: truck_mate
+description: TruckMate - Smart Logistics App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ── State Management ──
+  provider: ^6.1.1
+
+  # ── Local Storage ──
+  shared_preferences: ^2.2.2
+
+  # ── Networking ──
+  dio: ^5.4.0
+  pretty_dio_logger: ^1.4.0
+
+  # ── File Picker ──
+  file_picker: ^8.1.2
+
+  # ── Maps ──
+  flutter_map: ^6.1.0
+  latlong2: ^0.9.0
+  geolocator: ^11.0.0
+
+  # ── Media ──
+  image_picker: ^1.1.2
+  share_plus: ^10.1.4
+
+  # ── Onboarding ──
+  video_player: ^2.8.2
+  smooth_page_indicator: ^1.1.0
+
+  # ── Icons ──
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/videos/
