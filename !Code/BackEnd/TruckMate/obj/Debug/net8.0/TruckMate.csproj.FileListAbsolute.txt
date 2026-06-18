@@ -1,0 +1,660 @@
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\appsettings.Development.json
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\appsettings.json
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\TruckMate.staticwebassets.endpoints.json
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\TruckMate.exe
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\TruckMate.deps.json
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\TruckMate.runtimeconfig.json
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\TruckMate.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\TruckMate.pdb
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\TruckMate.csproj.AssemblyReference.cache
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\rpswa.dswa.cache.json
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\TruckMate.GeneratedMSBuildEditorConfig.editorconfig
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\TruckMate.AssemblyInfoInputs.cache
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\TruckMate.AssemblyInfo.cs
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\TruckMate.csproj.CoreCompileInputs.cache
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\TruckMate.MvcApplicationPartsAssemblyInfo.cs
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\TruckMate.MvcApplicationPartsAssemblyInfo.cache
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\rjimswa.dswa.cache.json
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\scopedcss\bundle\TruckMate.styles.css
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\staticwebassets.build.json
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\staticwebassets.build.json.cache
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\staticwebassets.development.json
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\TruckMate.csproj.Up2Date
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\TruckMate.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\refint\TruckMate.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\TruckMate.pdb
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\TruckMate.genruntimeconfig.cache
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\ref\TruckMate.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\obj\Debug\net8.0\TruckMate.sourcelink.json
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Azure.Core.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Azure.Identity.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Humanizer.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\System.ClientModel.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\System.CodeDom.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\System.Composition.Convention.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\System.Composition.Hosting.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\System.Composition.Runtime.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\System.Composition.TypedParts.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\System.Drawing.Common.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\System.Memory.Data.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\System.Runtime.Caching.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\System.Security.Permissions.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\System.Windows.Extensions.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\college\Level 4\! Graduation Project\TruckMate\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\appsettings.Development.json
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\TruckMate.staticwebassets.endpoints.json
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\appsettings.json
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\TruckMate.exe
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\TruckMate.deps.json
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\TruckMate.runtimeconfig.json
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\TruckMate.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\TruckMate.pdb
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Azure.Core.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Azure.Identity.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Humanizer.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.ClientModel.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.CodeDom.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Composition.Convention.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Composition.Hosting.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Composition.Runtime.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Composition.TypedParts.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Drawing.Common.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Memory.Data.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Runtime.Caching.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Security.Permissions.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Windows.Extensions.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.csproj.AssemblyReference.cache
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\rpswa.dswa.cache.json
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.GeneratedMSBuildEditorConfig.editorconfig
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.AssemblyInfoInputs.cache
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.AssemblyInfo.cs
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.csproj.CoreCompileInputs.cache
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.MvcApplicationPartsAssemblyInfo.cs
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.MvcApplicationPartsAssemblyInfo.cache
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.sourcelink.json
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\rjimswa.dswa.cache.json
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\scopedcss\bundle\TruckMate.styles.css
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets.build.json
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets.build.json.cache
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets.development.json
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.csproj.Up2Date
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\refint\TruckMate.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.pdb
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.genruntimeconfig.cache
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\ref\TruckMate.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\appsettings.Development.json
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\appsettings.json
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\TruckMate.staticwebassets.endpoints.json
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\TruckMate.exe
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\TruckMate.deps.json
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\TruckMate.runtimeconfig.json
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\TruckMate.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\TruckMate.pdb
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Azure.Core.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Azure.Identity.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Humanizer.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\MailKit.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\MimeKit.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.ClientModel.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.CodeDom.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Memory.Data.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.csproj.AssemblyReference.cache
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.AssemblyInfoInputs.cache
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.AssemblyInfo.cs
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.csproj.CoreCompileInputs.cache
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.MvcApplicationPartsAssemblyInfo.cs
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.MvcApplicationPartsAssemblyInfo.cache
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.sourcelink.json
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\scopedcss\bundle\TruckMate.styles.css
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets.build.json
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets.development.json
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.csproj.Up2Date
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.dll
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\refint\TruckMate.dll
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.pdb
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.genruntimeconfig.cache
+D:\project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\ref\TruckMate.dll
+D:\project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\appsettings.Development.json
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\appsettings.json
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\TruckMate.staticwebassets.endpoints.json
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\TruckMate.exe
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\TruckMate.deps.json
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\TruckMate.runtimeconfig.json
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\TruckMate.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\TruckMate.pdb
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Azure.Core.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Azure.Identity.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Humanizer.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\MailKit.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\MimeKit.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.ClientModel.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.CodeDom.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Formats.Asn1.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Memory.Data.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.csproj.AssemblyReference.cache
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.GeneratedMSBuildEditorConfig.editorconfig
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.AssemblyInfoInputs.cache
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.AssemblyInfo.cs
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.csproj.CoreCompileInputs.cache
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.MvcApplicationPartsAssemblyInfo.cs
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.MvcApplicationPartsAssemblyInfo.cache
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.sourcelink.json
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\scopedcss\bundle\TruckMate.styles.css
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets.build.json
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets.development.json
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets\msbuild.TruckMate.Microsoft.AspNetCore.StaticWebAssets.props
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets\msbuild.TruckMate.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets\msbuild.build.TruckMate.props
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.TruckMate.props
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.TruckMate.props
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets.pack.json
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.csproj.Up2Date
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.dll
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\refint\TruckMate.dll
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.pdb
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.genruntimeconfig.cache
+D:\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\ref\TruckMate.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\BCrypt.Net-Next.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\MailKit.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\MimeKit.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\TruckMate.xml
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\AutoMapper.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\FluentValidation.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\TruckMate.xml
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\LatoFont\Lato-Black.ttf
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\LatoFont\Lato-BlackItalic.ttf
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\LatoFont\Lato-Bold.ttf
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\LatoFont\Lato-BoldItalic.ttf
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\LatoFont\Lato-ExtraBold.ttf
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\LatoFont\Lato-ExtraBoldItalic.ttf
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\LatoFont\Lato-ExtraLight.ttf
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\LatoFont\Lato-ExtraLightItalic.ttf
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\LatoFont\Lato-Italic.ttf
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\LatoFont\Lato-Light.ttf
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\LatoFont\Lato-LightItalic.ttf
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\LatoFont\Lato-Medium.ttf
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\LatoFont\Lato-MediumItalic.ttf
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\LatoFont\Lato-Regular.ttf
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\LatoFont\Lato-SemiBold.ttf
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\LatoFont\Lato-SemiBoldItalic.ttf
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\LatoFont\Lato-Thin.ttf
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\LatoFont\Lato-ThinItalic.ttf
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\LatoFont\OFL.txt
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\QuestPDF.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\linux-arm64\native\libQuestPdfSkia.so
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\linux-arm64\native\libqpdf.so
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libQuestPdfSkia.so
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libqpdf.so
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\linux-x64\native\libQuestPdfSkia.so
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\linux-x64\native\libqpdf.so
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\osx-arm64\native\libQuestPdfSkia.dylib
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\osx-arm64\native\libqpdf.dylib
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\osx-x64\native\libQuestPdfSkia.dylib
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\osx-x64\native\libqpdf.dylib
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-x64\native\QuestPdfSkia.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-x64\native\libgcc_s_seh-1.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-x64\native\libstdc++-6.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-x64\native\libwinpthread-1.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-x64\native\qpdf.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-x64\native\zlib1.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-x86\native\QuestPdfSkia.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-x86\native\libgcc_s_dw2-1.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-x86\native\libstdc++-6.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-x86\native\libwinpthread-1.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-x86\native\qpdf.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\bin\Debug\net8.0\runtimes\win-x86\native\zlib1.dll
+E:\college\Level 4\! Graduation Project\TruckMate\BackEnd\TruckMate\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

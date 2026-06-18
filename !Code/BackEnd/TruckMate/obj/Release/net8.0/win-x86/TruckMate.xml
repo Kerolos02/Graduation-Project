@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TruckMate</name>
+    </assembly>
+    <members>
+        <member name="T:TruckMate.BackgroundServices.DriverOnlineTimeBackgroundService">
+            <summary>Every minute, increments <see cref="P:TruckMate.Core.Models.DriverDailySummary.OnlineTimeMinutes"/> for online drivers (UTC day bucket).</summary>
+        </member>
+        <member name="T:TruckMate.BackgroundServices.RequestExpiryBackgroundService">
+            <summary>Marks open marketplace requests past <see cref="P:TruckMate.Core.Models.TripRequest.ExpiresAt"/> as expired.</summary>
+        </member>
+        <member name="T:TruckMate.BackgroundServices.TraderGdprDataExportHostedService">
+            <summary>
+            Polls pending GDPR export rows and sends the ready email (ZIP build is a placeholder).
+            </summary>
+        </member>
+        <member name="M:TruckMate.Controllers.AuthController.Logout(System.Threading.CancellationToken)">
+            <summary>Logs out current user and invalidates active JWT token.</summary>
+        </member>
+        <member name="T:TruckMate.Controllers.DriverController">
+            <summary>Driver mobile home &amp; courier trip actions.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverController.GetHome(System.Threading.CancellationToken)">
+            <summary>Aggregates profile, active trip, today stats, and recent deliveries.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverController.PatchStatus(TruckMate.Core.DriverHome.Dtos.DriverStatusPatchRequest,System.Threading.CancellationToken)">
+            <summary>Toggles online/offline availability and notifies dispatchers over SignalR.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverController.GetIncomingTrips(System.Threading.CancellationToken)">
+            <summary>Lists pending zone-matched courier offers visible while the driver is online.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverController.StartTrip(System.Guid,System.Threading.CancellationToken)">
+            <summary>Marks an assigned courier trip as in-progress.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverController.TripExecution(System.Guid,System.Threading.CancellationToken)">
+            <summary>Returns driver trip execution payload for pickup/transit/delivery screens.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverController.SyncTrip(System.Guid,System.Threading.CancellationToken)">
+            <summary>Lightweight retry endpoint for connection-loss UI.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverController.CompleteTrip(System.Guid,System.Threading.CancellationToken)">
+            <summary>Marks an in-progress courier trip as completed and creates earning record.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverController.TripDetails(System.Guid,System.Threading.CancellationToken)">
+            <summary>Deep-link friendly payload for assigned trip introspection.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverController.RecentTrips(System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>Paginated ledger of historical completed courier trips.</summary>
+        </member>
+        <member name="T:TruckMate.Controllers.DriverMarketplaceTripsController">
+            <summary>Driver marketplace: browse open trip requests, accept/reject, and list assigned trips.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverMarketplaceTripsController.GetAvailableRequests(TruckMate.Validation.MarketplaceAvailableRequestsQuery,System.Threading.CancellationToken)">
+            <summary>Available Requests tab — paginated open requests excluding this driver's rejections.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverMarketplaceTripsController.GetRequestDetail(System.Guid,System.Threading.CancellationToken)">
+            <summary>Request Details screen — includes trader phone and special notes (not returned on the list endpoint).</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverMarketplaceTripsController.AcceptRequest(System.Guid,System.Threading.CancellationToken)">
+            <summary>Accept a marketplace request and create an assigned <see cref="T:TruckMate.Core.Models.DeliveryTrip"/>.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverMarketplaceTripsController.RejectRequest(System.Guid,TruckMate.Core.DriverTrips.Dtos.RejectTripRequestRequestDto,System.Threading.CancellationToken)">
+            <summary>Reject hides the request from this driver's available list; it stays open for others.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverMarketplaceTripsController.GetMyTrips(TruckMate.Validation.MarketplaceMyTripsQuery,System.Threading.CancellationToken)">
+            <summary>My Trips tab — trips assigned to this driver via marketplace or dispatch.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverOffersController.GetCurrent(System.Threading.CancellationToken)">
+            <summary>Returns the active incoming offer card for the authenticated driver.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverOffersController.Accept(System.Guid,System.Threading.CancellationToken)">
+            <summary>Accepts a pending trip offer before it expires.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverOffersController.Decline(System.Guid,TruckMate.Core.DriverOffers.Dtos.DeclineOfferRequestDto,System.Threading.CancellationToken)">
+            <summary>Declines a pending trip offer and requests redispatch to another driver.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverOffersController.Status(System.Guid,System.Threading.CancellationToken)">
+            <summary>Polling fallback for clients when SignalR is unavailable.</summary>
+        </member>
+        <member name="T:TruckMate.Controllers.DriverSettingsController">
+            <summary>Driver advanced settings endpoints.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverSettingsController.GetProfile(System.Threading.CancellationToken)">
+            <summary>Profile ribbon for Advanced Settings header.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverSettingsController.ChangePassword(TruckMate.Core.DriverSettings.Dtos.ChangePasswordRequestDto,System.Threading.CancellationToken)">
+            <summary>Changes password and invalidates previous JWT issuance via TokenVersion bumps.</summary>
+        </member>
+        <member name="T:TruckMate.Controllers.DriverWalletController">
+            <summary>Driver wallet endpoints for summary and earning trips.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverWalletController.GetScreen(TruckMate.Core.DriverWallet.Dtos.DriverWalletTripsQueryDto,System.Threading.CancellationToken)">
+            <summary>Returns wallet totals, growth, and summary cards.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverWalletController.GetSummary(System.Threading.CancellationToken)">
+            <summary>Returns wallet totals, growth, and summary cards.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverWalletController.GetTrips(TruckMate.Core.DriverWallet.Dtos.DriverWalletTripsQueryDto,System.Threading.CancellationToken)">
+            <summary>Returns paginated earning trips with tab filter.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.DriverWalletController.GetTripDetail(System.Guid,System.Threading.CancellationToken)">
+            <summary>Returns a single earning-trip detail owned by authenticated driver.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.LegalDocumentsController.GetDocument(System.String,System.Threading.CancellationToken)">
+            <summary>Returns the active legal document for the requested route key.</summary>
+        </member>
+        <member name="T:TruckMate.Controllers.TraderSettingsController">
+            <summary>Trader advanced settings endpoints (shipper-facing mobile app).</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.TraderSettingsController.GetProfile(System.Threading.CancellationToken)">
+            <summary>Trader profile ribbon for Advanced Settings header.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.TraderSettingsController.ChangePassword(TruckMate.Core.DriverSettings.Dtos.ChangePasswordRequestDto,System.Threading.CancellationToken)">
+            <summary>Changes password for the Trader account.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.TraderSettingsController.UpdateContact(TruckMate.Core.DriverSettings.Dtos.UpdateContactRequestDto,System.Threading.CancellationToken)">
+            <summary>Updates email and/or phone; verification flows are queued.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.TraderSettingsController.GetNotifications(System.Threading.CancellationToken)">
+            <summary>Returns shipment and payment lifecycle notification switches.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.TraderSettingsController.PatchNotifications(TruckMate.Core.TraderSettings.Dtos.TraderNotificationPreferencesPatchDto,System.Threading.CancellationToken)">
+            <summary>Upserts Trader notification preference rows.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.TraderSettingsController.GetPrivacy(System.Threading.CancellationToken)">
+            <summary>Returns business privacy posture and GDPR timestamps.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.TraderSettingsController.PatchPrivacy(TruckMate.Core.TraderSettings.Dtos.TraderPrivacySettingsPatchDto,System.Threading.CancellationToken)">
+            <summary>Updates privacy toggles with per-field GDPR audit logging.</summary>
+        </member>
+        <member name="M:TruckMate.Controllers.TraderSettingsController.RequestDataExport(System.Threading.CancellationToken)">
+            <summary>
+            Requests a GDPR data portability export ZIP (queued; email sent when ready).
+            </summary>
+        </member>
+        <member name="M:TruckMate.Controllers.TraderSettingsController.DeleteAccount(TruckMate.Core.DriverSettings.Dtos.ScheduleAccountDeletionRequestDto,System.Threading.CancellationToken)">
+            <summary>
+            Schedules Trader account deletion with a grace period unless blocked shipments exist.
+            </summary>
+        </member>
+        <member name="M:TruckMate.Controllers.TraderSettingsController.CancelDeletion(System.Threading.CancellationToken)">
+            <summary>Cancels a pending Trader account deletion inside the grace window.</summary>
+        </member>
+        <member name="M:TruckMate.API.Controllers.RegisterController.ValidateOtpToken(System.String,System.String)">
+            <summary>
+            التحقق من الـ OTP Token اللي بيجي مع طلب التسجيل
+            </summary>
+        </member>
+        <member name="M:TruckMate.API.Controllers.RegisterController.ValidateResetToken(System.String)">
+            <summary>
+            التحقق من الـ Reset Token وإرجاع الـ UserId
+            </summary>
+        </member>
+        <member name="M:TruckMate.API.Services.IEmailService.SendEmailVerificationAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <summary>Sends a contact verification message (alias for advanced settings flows).</summary>
+        </member>
+        <member name="P:TruckMate.Core.DriverHome.Dtos.DriverStatusPatchRequest.Status">
+            <summary>Online or Offline.</summary>
+        </member>
+        <member name="M:TruckMate.Core.DriverSettings.FullNameInitials.FromFullName(System.String)">
+            <summary>First letter of first name + first letter of last name, uppercased.</summary>
+        </member>
+        <member name="T:TruckMate.Core.Enums.CourierTripStatus">
+            <summary>Lifecycle for courier-facing delivery trips (driver mobile app).</summary>
+        </member>
+        <member name="T:TruckMate.Core.Enums.DriverAvailabilityStatus">
+            <summary>Driver visibility for accepting new shipments on the driver app.</summary>
+        </member>
+        <member name="T:TruckMate.Core.Enums.TripRequestStatus">
+            <summary>Lifecycle for marketplace trip requests (driver browses and accepts).</summary>
+        </member>
+        <member name="T:TruckMate.Core.Models.DeliveryTrip">
+            <summary>Shipment trip shown on the driver home screen (separate from legacy offer-based Trip).</summary>
+        </member>
+        <member name="P:TruckMate.Core.Models.DeliveryTrip.AssignedDriverId">
+            <summary>Nullable until a dispatcher assigns this offer to a driver.</summary>
+        </member>
+        <member name="P:TruckMate.Core.Models.DeliveryTrip.ShipmentNumericId">
+            <summary>Display number used to render SHP-####.</summary>
+        </member>
+        <member name="P:TruckMate.Core.Models.DeliveryTrip.DateUtc">
+            <summary>Trip calendar date (UTC date part).</summary>
+        </member>
+        <member name="P:TruckMate.Core.Models.DeliveryTrip.ScheduledStartTime">
+            <summary>Optional scheduled slot; actual start tracked in StartedAtUtc.</summary>
+        </member>
+        <member name="P:TruckMate.Core.Models.DeliveryTrip.Zone">
+            <summary>District used to match Pending offers with the driver.CurrentZone.</summary>
+        </member>
+        <member name="P:TruckMate.Core.Models.DeliveryTrip.EarningsOnCompletionEgp">
+            <summary>Amount credited to driver's daily earnings when Status becomes Completed.</summary>
+        </member>
+        <member name="P:TruckMate.Core.Models.Driver.PublicId">
+            <summary>Stable public identifier exposed to mobile clients alongside legacy int FK.</summary>
+        </member>
+        <member name="P:TruckMate.Core.Models.Driver.AssignedDeliveryTripId">
+            <summary>Courier trip currently assigned/in progress for this driver (max one).</summary>
+        </member>
+        <member name="P:TruckMate.Core.Models.Driver.LastAvailabilityChangeUtc">
+            <summary>Last transition to Online; used together with Offline transitions for session tracking.</summary>
+        </member>
+        <member name="P:TruckMate.Core.Models.People.TokenVersion">
+            <summary>Incremented to invalidate previously issued JWT access tokens.</summary>
+        </member>
+        <member name="P:TruckMate.Core.Models.People.IsDeleted">
+            <summary>Account scheduled for hard deletion (driver mobile advanced settings).</summary>
+        </member>
+        <member name="P:TruckMate.Core.Models.People.ScheduledHardDeleteAtUtc">
+            <summary>When the account will be permanently removed if not cancelled.</summary>
+        </member>
+        <member name="T:TruckMate.Core.Models.RequestNumberSequence">
+            <summary>Singleton row (Id = 1) storing the last assigned REQ-#### number.</summary>
+        </member>
+        <member name="P:TruckMate.Core.Models.Trader.TokenVersion">
+            <summary>Separate from People.TokenVersion — used in Trader JWT validation.</summary>
+        </member>
+        <member name="P:TruckMate.Core.Models.Trader.PhoneNumber">
+            <summary>Business phone shown on driver request details; falls back to <see cref="P:TruckMate.Core.Models.People.Phone"/> when empty.</summary>
+        </member>
+        <member name="P:TruckMate.Core.Models.Trader.EmailVerificationOtpHash">
+            <summary>BCrypt hash of emailed verification OTP for pending email change verification.</summary>
+        </member>
+        <member name="P:TruckMate.Core.Models.TraderAuditLog.PerformedAtUtc">
+            <remarks>UTC instant.</remarks>
+        </member>
+        <member name="P:TruckMate.Core.Models.TraderPrivacySetting.GdprDataExportDeliveredAtUtc">
+            <summary>Set when compile-and-email completes (hosted worker).</summary>
+        </member>
+        <member name="T:TruckMate.Core.Models.TripRequest">
+            <summary>Open marketplace shipment request visible to eligible online drivers.</summary>
+        </member>
+        <member name="P:TruckMate.Core.Models.TripRequest.Zone">
+            <summary>Operational zone; must match <see cref="P:TruckMate.Core.Models.Driver.CurrentZone"/> for listing.</summary>
+        </member>
+        <member name="P:TruckMate.Core.Models.TripRequest.RequiredTruckType">
+            <summary>When set, only drivers whose <see cref="P:TruckMate.Core.Models.Driver.TruckType"/> matches can see the request.</summary>
+        </member>
+        <member name="P:TruckMate.Core.Models.TripRequest.CreatedDeliveryTripId">
+            <summary>Delivery trip created when a driver accepts this request.</summary>
+        </member>
+        <member name="P:TruckMate.Core.TraderSettings.Dtos.TraderSettingsProfileResponseDto.BusinessName">
+            <summary>Optional company trade name for business traders.</summary>
+        </member>
+        <member name="M:TruckMate.Data.Context.TruckMateDbContext.ApplyCourierTripCompletionSideEffects">
+            <summary>
+            Applies business rule updates when a <see cref="T:TruckMate.Core.Models.DeliveryTrip"/> transitions to Completed
+            (trips count, earnings, clearing assigned-trip pointer).
+            </summary>
+        </member>
+        <member name="M:TruckMate.Data.UnitOfWork.IUnitOfWork.TraderHasBlockingShipmentsAsync(System.Int32,System.Threading.CancellationToken)">
+            <returns>True if the trader has shipments that prevent account deletion.</returns>
+        </member>
+        <member name="T:TruckMate.Hubs.DriverHub">
+            <summary>Real-time courier channel (/hubs/driver).</summary>
+        </member>
+        <member name="F:TruckMate.Hubs.DriverHub.MarketplaceAllDriversGroupName">
+            <summary>All drivers subscribed on the Trips marketplace tab (expiry fan-out).</summary>
+        </member>
+        <member name="M:TruckMate.Hubs.DriverHub.UpdateStatus(System.String)">
+            <summary>Driver emits availability changes (mirrors PATCH /api/driver/status).</summary>
+        </member>
+        <member name="M:TruckMate.Hubs.DriverHub.JoinOperationalZone(System.String)">
+            <summary>Optional: join zone channel for granular TripOffer fan-out.</summary>
+        </member>
+        <member name="M:TruckMate.Hubs.DriverHub.JoinDispatcherFeed">
+            <summary>Dispatcher dashboards subscribe for DriverAvailabilityChanged and CourierTripStarted events.</summary>
+        </member>
+        <member name="M:TruckMate.Hubs.DriverHub.JoinAvailableRequestsRoom(System.String)">
+            <summary>Subscribe to marketplace SignalR events for a zone while on Available Requests.</summary>
+        </member>
+        <member name="T:TruckMate.Middleware.TokenVersionValidationMiddleware">
+            <summary>
+            Ensures JWT token_version matches the database and blocks accounts past their grace window.
+            </summary>
+        </member>
+        <member name="T:TruckMate.Migrations.InitialCratingDb">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.InitialCratingDb.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.InitialCratingDb.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.InitialCratingDb.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:TruckMate.Migrations.addotp">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.addotp.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.addotp.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.addotp.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:TruckMate.Migrations.addReviewTable">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.addReviewTable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.addReviewTable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.addReviewTable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:TruckMate.Migrations.MakePasswordNullable">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.MakePasswordNullable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.MakePasswordNullable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.MakePasswordNullable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:TruckMate.Migrations.AddDriverWalletEarnings">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.AddDriverWalletEarnings.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.AddDriverWalletEarnings.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.AddDriverWalletEarnings.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:TruckMate.Migrations.AddTraderMobileScreensModule">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.AddTraderMobileScreensModule.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.AddTraderMobileScreensModule.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.AddTraderMobileScreensModule.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:TruckMate.Migrations.DriverMarketplaceTripRequests">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.DriverMarketplaceTripRequests.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.DriverMarketplaceTripRequests.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TruckMate.Migrations.DriverMarketplaceTripRequests.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:TruckMate.Services.Accounts.IAccountHardDeletionExecutor">
+            <summary>Permanently removes users whose deletion grace periods have elapsed.</summary>
+        </member>
+        <member name="T:TruckMate.Services.DriverHome.ICourierTripDispatchService">
+            <summary>Used by dispatcher integrations to assign courier trips and raise SignalR payloads.</summary>
+        </member>
+        <member name="T:TruckMate.Services.DriverHome.DriverHomeService">
+            <summary>Aggregates driver home payloads and coordinates courier-trip transitions.</summary>
+        </member>
+        <member name="M:TruckMate.Services.DriverHome.IDriverRealtimePublisher.PublishDriverAvailabilityChangedAsync(System.Int32,System.String,System.Threading.CancellationToken)">
+            <summary>Notifies the dispatcher dashboard that a driver toggled availability.</summary>
+        </member>
+        <member name="M:TruckMate.Services.DriverHome.IDriverRealtimePublisher.PublishTripAssignedAsync(System.Int32,TruckMate.Services.DriverHome.TripAssignedSignalPayload,System.Threading.CancellationToken)">
+            <summary>Notifies a specific driver that a trip was assigned.</summary>
+        </member>
+        <member name="M:TruckMate.Services.DriverHome.IDriverRealtimePublisher.PublishTripOfferAsync(System.String,TruckMate.Services.DriverHome.TripOfferSignalPayload,System.Threading.CancellationToken)">
+            <summary>Announces a new pending trip for drivers in a zone (online clients should filter client-side).</summary>
+        </member>
+        <member name="M:TruckMate.Services.DriverHome.IDriverRealtimePublisher.PublishTripStartedAsync(System.Guid,System.Int32,System.DateTime,System.Threading.CancellationToken)">
+            <summary>Dispatcher + monitoring: trip moved to InProgress.</summary>
+        </member>
+        <member name="T:TruckMate.Services.DriverTrips.IMarketplaceRequestCacheBumper">
+            <summary>Bumps a global version so per-driver available-request cache entries become stale immediately.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,6 @@
+@TruckMate_HostAddress = http://localhost:5289
+
+GET {{TruckMate_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
